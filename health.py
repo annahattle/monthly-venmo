@@ -23,7 +23,8 @@ def main(now):
   telegram = Telegram(bot_token, chat_id)
 
   print("🤑 Verifying Venmo client is working...")
-  userId = venmo.get_user_id_by_username("Jordan-Mishlove")
+  userId = venmo.get_user_id_by_username("Kevinwcao")
+  print(f"kcao userid: {userId}")
 
   if userId:
     print('✅ Venmo client is working as expected.\n')
