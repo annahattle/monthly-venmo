@@ -23,17 +23,17 @@ def main(now):
 
   friends =[
     {
-      "name": "KRam",
+      "name": "Kevin",
       "id": k_friend_id,
-    },
-    {
-      "name": "Chrissy",
-      "id": c_friend_id,
-    },
-    {
-      "name": "Will",
-      "id": w_friend_id,
-    },
+    } #,
+    # {
+    #   "name": "Chrissy",
+    #   "id": c_friend_id,
+    # },
+    # {
+    #   "name": "Will",
+    #   "id": w_friend_id,
+    # },
   ]
 
   successfulRequests = []
@@ -42,14 +42,9 @@ def main(now):
   for friend in friends:
     name = friend["name"]
     id = friend["id"]
-    description = "Spotify for the month of " + month + "— Sent by Joe's Assistant Efron 🤵🏻‍♂️"
-    amount = 3.00
-    message = f"""Good news old sport!
-
-I have successfully requested money from {name}.
-
-— Efron 🤵🏻‍♂️
-    """
+    description = "Spotify for the month of " + month + "— Automated Request from Anna"
+    amount = 2.86
+    message = f"""I have successfully requested money from {name}. — Efron"""
     success = venmo.request_money(id, amount, description, telegram.send_message(message))
     if success:
       successfulRequests.append(success)
