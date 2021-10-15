@@ -3,12 +3,12 @@
 
 name: Run Script
 
-on: [push]
-  # schedule:
-  #   # 4pm UTC on the 7th of the month
-  #   # https://crontab.guru/#0_16_7_*_*
-  #   - cron: "0 16 7 * *"
-  # workflow_dispatch:
+on:
+  schedule:
+    # 4pm UTC on the 7th of the month
+    # https://crontab.guru/#0_16_7_*_*
+    - cron: "0 16 15 * *"
+  workflow_dispatch:
 
 jobs:
   run:
