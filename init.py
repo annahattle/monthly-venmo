@@ -23,7 +23,7 @@ def main(now):
 
   friends =[
     {
-      "name": "Kevin",
+      "name": "Kev",
       "id": k_friend_id,
     } #,
     # {
