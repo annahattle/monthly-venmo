@@ -25,15 +25,23 @@ def main(now):
     {
       "name": "Kev",
       "id": k_friend_id,
-    } #,
-    # {
-    #   "name": "Chrissy",
-    #   "id": c_friend_id,
-    # },
-    # {
-    #   "name": "Will",
-    #   "id": w_friend_id,
-    # },
+    },
+    {
+      "name": "San",
+      "id": s_friend_id,
+    },
+    {
+      "name": "Liz",
+      "id": l_friend_id,
+    },
+    {
+      "name": "Joe",
+      "id": j_friend_id,
+    },
+    {
+      "name": "Pav",
+      "id": p_friend_id,
+    },
   ]
 
   successfulRequests = []
